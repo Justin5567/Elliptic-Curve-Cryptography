@@ -1,0 +1,106 @@
+Magic 271485
+Revision Verdi_O-2018.09
+
+; Window Layout <x> <y> <width> <height> <signalwidth> <valuewidth>
+viewPort 284 404 2184 945 250 383
+
+; File list:
+; openDirFile [-d delimiter] [-s time_offset] [-rf auto_bus_rule_file] path_name file_name
+openDirFile -d / "" "/home/E94079011/ECC/hls_transform/verify.fsdb"
+
+; file time scale:
+; fileTimeScale ### s|ms|us|ns|ps
+
+; signal spacing:
+signalSpacing 5
+
+; windowTimeUnit is used for zoom, cursor & marker
+; waveform viewport range
+zoom 2311706.543000 2348693.847688
+cursor 780500.000000
+marker 0.000000
+
+; user define markers
+; userMarker time_pos marker_name color linestyle
+; visible top row signal index
+top 0
+; marker line index
+markerPos 4
+
+; event list
+; addEvent event_name event_expression
+; curEvent event_name
+
+
+
+COMPLEX_EVENT_BEGIN
+
+
+COMPLEX_EVENT_END
+
+
+
+; toolbar current search type
+; curSTATUS search_type
+curSTATUS ByChange
+
+
+addGroup "G1"
+activeDirFile "" "/home/E94079011/ECC/hls_transform/verify.fsdb"
+addSignal -h 15 /TESTBED_verify/U_ecc_verify/clk
+addSignal -h 15 -holdScope rst_n
+addSignal -h 15 -UNSIGNED -UDEC -holdScope state_cs[5:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope state_ns[5:0]
+addSignal -h 15 -holdScope pm1_flag
+addSignal -h 15 -holdScope pm2_flag
+addGroup "G2"
+addSignal -h 15 /TESTBED_verify/U_ecc_verify/pm1_in_valid
+addSignal -h 15 -holdScope pm1_opA[255:0]
+addSignal -h 15 -holdScope pm1_opB[255:0]
+addSignal -h 15 -holdScope pm1_opM[255:0]
+addSignal -h 15 -holdScope pm1_out_data[255:0]
+addSignal -h 15 -holdScope pm1_out_valid
+addSignal -h 15 -holdScope pm2_in_valid
+addSignal -h 15 -holdScope pm2_opA[255:0]
+addSignal -h 15 -holdScope pm2_opB[255:0]
+addSignal -h 15 -holdScope pm2_opM[255:0]
+addSignal -h 15 -holdScope pm2_out_data[255:0]
+addSignal -h 15 -holdScope pm2_out_valid
+addGroup "G3"
+addSignal -h 15 /TESTBED_verify/U_ecc_verify/am_opA[255:0]
+addSignal -h 15 -holdScope am_opB[255:0]
+addSignal -h 15 -holdScope am_opM[255:0]
+addSignal -h 15 -holdScope am_out_data[255:0]
+addGroup "G4"
+addSignal -h 15 /TESTBED_verify/U_ecc_verify/t1x[255:0]
+addSignal -h 15 -holdScope t1y[255:0]
+addSignal -h 15 -holdScope t2x[255:0]
+addSignal -h 15 -holdScope t2y[255:0]
+addSignal -h 15 -holdScope tx1[255:0]
+addSignal -h 15 -holdScope tx2[255:0]
+addSignal -h 15 -holdScope tx3[255:0]
+addSignal -h 15 -holdScope ty[255:0]
+addSignal -h 15 -holdScope u1[255:0]
+addSignal -h 15 -holdScope u2[255:0]
+addSignal -h 15 -holdScope x[255:0]
+addSignal -h 15 -holdScope y[255:0]
+addGroup "G5"
+
+; getSignalForm Scope Hierarchy Status
+; active file of getSignalForm
+activeDirFile "" "/home/E94079011/ECC/hls_transform/verify.fsdb"
+
+GETSIGNALFORM_SCOPE_HIERARCHY_BEGIN
+getSignalForm close
+
+"/TESTBED_verify"
+"/TESTBED_verify/U_ecc_verify"
+
+SCOPE_LIST_BEGIN
+"/TESTBED_verify"
+"/TESTBED_verify/U_ecc_verify"
+SCOPE_LIST_END
+
+GETSIGNALFORM_SCOPE_HIERARCHY_END
+
+

@@ -1,0 +1,107 @@
+Magic 271485
+Revision Verdi_O-2018.09
+
+; Window Layout <x> <y> <width> <height> <signalwidth> <valuewidth>
+viewPort 95 348 2184 945 250 383
+
+; File list:
+; openDirFile [-d delimiter] [-s time_offset] [-rf auto_bus_rule_file] path_name file_name
+openDirFile -d / "" "/home/E94079011/ECC/hls_transform/dotProduct.fsdb"
+
+; file time scale:
+; fileTimeScale ### s|ms|us|ns|ps
+
+; signal spacing:
+signalSpacing 5
+
+; windowTimeUnit is used for zoom, cursor & marker
+; waveform viewport range
+zoom 1905082829.094284 1920864079.093900
+cursor 1916599500.000000
+marker 0.000000
+
+; user define markers
+; userMarker time_pos marker_name color linestyle
+; visible top row signal index
+top 0
+; marker line index
+markerPos 30
+
+; event list
+; addEvent event_name event_expression
+; curEvent event_name
+
+
+
+COMPLEX_EVENT_BEGIN
+
+
+COMPLEX_EVENT_END
+
+
+
+; toolbar current search type
+; curSTATUS search_type
+curSTATUS ByChange
+
+
+aliasmapname alias_tab_1
+nalias MULT		5		NULL
+nalias ADD		3		NULL
+
+addGroup "G1"
+activeDirFile "" "/home/E94079011/ECC/hls_transform/dotProduct.fsdb"
+addSignal -h 15 /TESTBED_add/U_dotProduct/clk
+addSignal -h 15 -holdScope rst_n
+aliasname alias_tab_1
+addSignal -h 15 -UNSIGNED -HEX -holdScope state_cs[3:0]
+aliasname alias_tab_1
+addSignal -h 15 -UNSIGNED -HEX -holdScope state_ns[3:0]
+addSignal -h 15 -holdScope add_in_valid
+addSignal -h 15 -holdScope add_out_valid
+addSignal -h 15 -holdScope Px_reg[255:0]
+addSignal -h 15 -holdScope Py_reg[255:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope k_reg[255:0]
+addSignal -h 15 -holdScope Rx[255:0]
+addSignal -h 15 -holdScope Ry[255:0]
+addGroup "G2"
+addSignal -h 15 /TESTBED_add/U_dotProduct/a1/clk
+addSignal -h 15 -holdScope rst_n
+addSignal -h 15 -UNSIGNED -UDEC -holdScope state_cs[4:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope state_ns[4:0]
+addSignal -h 15 -holdScope in_valid
+addSignal -h 15 -holdScope out_valid
+addSignal -h 15 -UNSIGNED -UDEC /TESTBED_add/U_dotProduct/cnt[9:0]
+addSignal -h 15 /TESTBED_add/U_dotProduct/a1/Px_reg[255:0]
+addSignal -h 15 -holdScope Py_reg[255:0]
+addSignal -h 15 -holdScope Qx_reg[255:0]
+addSignal -h 15 -holdScope Qy_reg[255:0]
+addGroup "G3"
+addSignal -h 15 /TESTBED_add/U_dotProduct/add_Px[255:0]
+addSignal -h 15 -holdScope add_Py[255:0]
+addSignal -h 15 -holdScope add_Qx[255:0]
+addSignal -h 15 -holdScope add_Qy[255:0]
+addSignal -h 15 -holdScope add_Rx[255:0]
+addSignal -h 15 -holdScope add_Ry[255:0]
+addGroup "G4"
+
+; getSignalForm Scope Hierarchy Status
+; active file of getSignalForm
+activeDirFile "" "/home/E94079011/ECC/hls_transform/dotProduct.fsdb"
+
+GETSIGNALFORM_SCOPE_HIERARCHY_BEGIN
+getSignalForm close
+
+"/TESTBED_add"
+"/TESTBED_add/U_dotProduct"
+"/TESTBED_add/U_dotProduct/a1"
+
+SCOPE_LIST_BEGIN
+"/TESTBED_add"
+"/TESTBED_add/U_dotProduct"
+"/TESTBED_add/U_dotProduct/a1"
+SCOPE_LIST_END
+
+GETSIGNALFORM_SCOPE_HIERARCHY_END
+
+
