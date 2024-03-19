@@ -1,5 +1,5 @@
 # Elliptic Curve Cryptography
-Implement ECC and ECDSA in Verilog. Sign and Verify are not completed, but the dot function and the modular does work.
+Implement ECC and ECDSA in Verilog. Sign and Verify are not completed yet, but the dot function and the modular operation do work.
 
 ## How to run
 ncverilog TESTBED_**ACTION**.v +access+r
